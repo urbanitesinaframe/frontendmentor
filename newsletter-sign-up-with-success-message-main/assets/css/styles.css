@@ -1,0 +1,66 @@
+:root {
+  /**colors**/
+  --Tomato: #ff625787;
+
+  --Dark-Slate-Grey: #242742;
+  --Charcoal-Grey: #36384e;
+  --Grey: #9294a0;
+  --White: #ffffff;
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("/newsletter-sign-up-with-success-message-main/assets/fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/newsletter-sign-up-with-success-message-main/assets/fonts/Roboto-Regular.ttf");
+}
+
+h2 {
+  font-family: Roboto-Bold;
+  color: var(--Dark-Slate-Grey);
+  text-transform: uppercase;
+}
+
+p {
+  font-family: Roboto-Regular;
+}
+
+body {
+  background-color: var(--Charcoal-Grey);
+}
+
+main {
+  width: fit-content;
+  height: auto;
+  border-radius: 20px;
+  padding: 2rem;
+  background-color: #ffffff;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+}
+
+.bulletlist {
+  display: flex;
+}
+
+.bulletlist::before {
+  content: url("/newsletter-sign-up-with-success-message-main/assets/images/icon-list.svg");
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+form .submit-btn {
+  background-color: var(--Tomato);
+}
